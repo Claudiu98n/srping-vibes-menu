@@ -6,7 +6,7 @@ import Menu3 from "./images/menu-3.jfif";
 import Carousel from "react-bootstrap/Carousel";
 
 function App() {
-  const images = [Menu1, Menu2, Menu3];
+  const images = [Menu1, Menu3];
 
   return (
     <div className="App">
