@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Menu1 from "./images/menu-1.jfif";
+import Menu2 from "./images/menu-2.jfif";
+import Menu3 from "./images/menu-3.jfif";
+import Carousel from "react-bootstrap/Carousel";
 
 function App() {
+  const images = [Menu1, Menu2, Menu3];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Carousel fade variant="dark">
+        {images.map((image, index) => (
+          <Carousel.Item key={image}>
+            <img className="img-fluid" src={image} alt={`pic-${index}`} />
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </div>
   );
 }
