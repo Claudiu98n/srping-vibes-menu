@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Menu1 from "./images/menu-1.jfif";
-import Menu2 from "./images/menu-2.jfif";
 import Menu3 from "./images/menu-3.jfif";
 import Carousel from "react-bootstrap/Carousel";
 
